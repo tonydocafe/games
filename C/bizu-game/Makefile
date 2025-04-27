@@ -1,10 +1,5 @@
-ifeq ($(OS),Windows_NT)
-	MKDIR=powershell -file .\utils\mkdir.ps1 -dirs
-	RMRF=powershell -file .\utils\rm.ps1 -dirs
-else
-	MKDIR=mkdir -p
-	RMRF=rm -rf
-endif
+MKDIR=mkdir -p
+RMRF=rm -rf
 
 CC=gcc -std=c17
 CFLAGS=-g
