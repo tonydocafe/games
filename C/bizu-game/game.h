@@ -39,4 +39,12 @@ typedef struct {
 
 } player;
 
+player* cria_player();
+
+int movi (player *objeto, int direcao);
+
+void desen(player* objeto);
+
+void mudareta(player *objeto);
+
 #endif
