@@ -6,6 +6,37 @@ typedef struct{
     int y;
 }Coord;
 
+typedef struct {
+    Coord* c;
+    int tamanho;
+    int direcao;
 
+    int frame_velocidade;     
+    int frame_contador;       
+    int alterna_imagem;      
+
+
+    int velocidade_salto;
+    int gravidade;
+    int altura_maxima;
+    int altura_atual;
+    int direcao_anterior;
+    int saltando;
+    bool subindo;
+
+    int w;
+    int s;
+    int a;
+    int d;
+
+    int chute_contador;
+    int chute_duracao;
+
+    bool andando_para_direita;
+    bool andando_para_esquerda;
+    bool parado;
+
+
+} player;
 
 #endif
