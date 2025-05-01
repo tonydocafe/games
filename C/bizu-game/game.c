@@ -1,0 +1,44 @@
+#include <jogo.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <time.h>
+#include <string.h>
+#include "game.h"
+#include <jogo.h>
+
+
+
+player* cria_player() {
+    player* objeto = (player*)malloc(sizeof(player));
+    objeto->tamanho = 1;
+    objeto->c = (Coord*)malloc(3600 * sizeof(Coord));  
+    objeto->c[0].x = 90;
+    objeto->c[0].y = 400;
+    objeto->direcao = BAIXO;
+
+    objeto->saltando = false;
+    objeto->velocidade_salto = 100;
+    objeto->gravidade = 100;
+    objeto->altura_maxima = 30;
+    objeto->altura_atual = 0;
+    objeto->direcao_anterior = DIREITA;
+
+    objeto->frame_velocidade = 10;
+    objeto->frame_contador = 0;
+    objeto->alterna_imagem = 0;
+    objeto->saltando = false;
+    objeto->subindo = false;
+    objeto->w = false;
+    objeto->a = false;
+    objeto->s = false;
+    objeto->d = false;
+    objeto->chute_contador = 0;
+    objeto->chute_duracao = 2;
+    objeto->andando_para_direita = false;
+    objeto->andando_para_esquerda = false;
+    objeto->parado = true;
+
+
+    return objeto;
+}
