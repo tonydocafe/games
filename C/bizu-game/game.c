@@ -111,4 +111,8 @@ int movi(player* objeto, int direcao) {
                 objeto->subindo = false;  
         }
     } else {
+         // Descendo
+            objeto->c[0].y += objeto->gravidade;
+            objeto->altura_atual -= objeto->gravidade;
+            objeto->c[0].x +=5;    
 
