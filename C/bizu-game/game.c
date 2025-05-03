@@ -92,10 +92,10 @@ void mudareta(player* objeto){
 }
 int movi(player* objeto, int direcao) {
       if (!objeto->saltando && !objeto->w && !objeto->s) {  
-                  if (objeto->andando_para_direita) {
-                         objeto->c[0].x += 15; 
-        }
-      if (objeto->andando_para_esquerda) {
+          if (objeto->andando_para_direita) {
+               objeto->c[0].x += 15; 
+         }
+          if (objeto->andando_para_esquerda) {
              objeto->c[0].x -= 15;
-        }
+         }
 }
