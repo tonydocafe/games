@@ -55,7 +55,7 @@ void mudareta(player* objeto){
         objeto->andando_para_direita = false;
         objeto->direcao = ESQUERDA;
         } else {
-             objeto->andando_para_direita = false;
+            objeto->andando_para_direita = false;
             objeto->andando_para_esquerda = false;
         }
         if (tecla_acabou_de_ser_apertada(BAIXO)) {
