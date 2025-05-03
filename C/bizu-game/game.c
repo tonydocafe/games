@@ -108,6 +108,6 @@ int movi(player* objeto, int direcao) {
             if(tecla_acabou_de_ser_apertada(DIREITA))objeto->c[0].x +=50;    
       
             if (objeto->altura_atual >= objeto->altura_maxima) {
-                objeto->subindo = false;  // Começa a descer
+                objeto->subindo = false;  
             }
         } else {
