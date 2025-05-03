@@ -58,4 +58,14 @@ void mudareta(player* objeto){
              objeto->andando_para_direita = false;
             objeto->andando_para_esquerda = false;
         }
+        if (tecla_acabou_de_ser_apertada(BAIXO)) {
+        objeto->direcao = BAIXO;
+        }
+        if (tecla_acabou_de_ser_apertada(CIMA)) {
+        objeto->saltando = true;
+        objeto->subindo = true;
+        objeto->altura_atual = 0;
+        objeto->direcao_anterior = objeto->direcao;
+        }
+
 
