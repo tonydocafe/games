@@ -107,7 +107,8 @@ int movi(player* objeto, int direcao) {
             objeto->altura_atual += objeto->velocidade_salto;
                
       
-            if (objeto->altura_atual >= objeto->altura_maxima) {
+        if (objeto->altura_atual >= objeto->altura_maxima) {
                 objeto->subindo = false;  
-            }
-        } else {
+        }
+    } else {
+
