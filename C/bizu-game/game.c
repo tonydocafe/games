@@ -90,3 +90,4 @@ void mudareta(player* objeto){
             objeto->chute_contador = 0;
         }
 }
+int movi(player* objeto, int direcao) {
