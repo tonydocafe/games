@@ -46,3 +46,8 @@ player* cria_player() {
 
 void mudareta(player* objeto){
       if (objeto->saltando || objeto->w || objeto->d ||objeto->a || objeto->s) return;
+        if (tecla_pressionada(DIREITA)) {
+        objeto->andando_para_direita = true;
+        objeto->andando_para_esquerda = false;
+        objeto->direcao = DIREITA;
+    
