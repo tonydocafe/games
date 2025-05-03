@@ -102,7 +102,7 @@ int movi(player* objeto, int direcao) {
 
     if (objeto->saltando) {
         if (objeto->subindo) {
-            // Subindo
+
             objeto->c[0].y -= objeto->velocidade_salto + 50;
             objeto->altura_atual += objeto->velocidade_salto;
             if(tecla_acabou_de_ser_apertada(DIREITA))objeto->c[0].x +=50;    
