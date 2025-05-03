@@ -127,3 +127,4 @@ int movi(player* objeto, int direcao) {
         }
     }
 
+
