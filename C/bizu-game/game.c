@@ -93,5 +93,5 @@ void mudareta(player* objeto){
 int movi(player* objeto, int direcao) {
       if (!objeto->saltando && !objeto->w && !objeto->s) {  
                   if (objeto->andando_para_direita) {
-                         objeto->c[0].x += 15; // velocidade andando para direita
+                         objeto->c[0].x += 15; 
         }
