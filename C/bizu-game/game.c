@@ -50,4 +50,8 @@ void mudareta(player* objeto){
         objeto->andando_para_direita = true;
         objeto->andando_para_esquerda = false;
         objeto->direcao = DIREITA;
-    
+        } else if (tecla_pressionada(ESQUERDA)) {
+        objeto->andando_para_esquerda = true;
+        objeto->andando_para_direita = false;
+        objeto->direcao = ESQUERDA;
+        } else {
