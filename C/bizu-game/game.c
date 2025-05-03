@@ -44,4 +44,5 @@ player* cria_player() {
 }
 
 
-void mudareta(player* objeto)
+void mudareta(player* objeto){
+      if (objeto->saltando || objeto->w || objeto->d ||objeto->a || objeto->s) return;
