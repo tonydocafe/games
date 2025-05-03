@@ -95,3 +95,4 @@ int movi(player* objeto, int direcao) {
                   if (objeto->andando_para_direita) {
                          objeto->c[0].x += 15; 
         }
+      if (objeto->andando_para_esquerda) {
