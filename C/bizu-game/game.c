@@ -85,8 +85,8 @@ void mudareta(player* objeto){
             objeto->chute_contador = 0;
         }
         if (tecla_acabou_de_ser_apertada(A)) {
-        objeto->a = true;
-        objeto->direcao_anterior = objeto->direcao;
-        objeto->chute_contador = 0;
+            objeto->a = true;
+            objeto->direcao_anterior = objeto->direcao;
+            objeto->chute_contador = 0;
         }
 }
