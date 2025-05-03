@@ -42,3 +42,6 @@ player* cria_player() {
 
     return objeto;
 }
+
+
+void mudareta(player* objeto)
