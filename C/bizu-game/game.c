@@ -117,7 +117,7 @@ int movi(player* objeto, int direcao) {
             objeto->c[0].x +=5;    
             
             if (objeto->altura_atual <= 0) {
-                // Fim do salto
+                
                 objeto->altura_atual = 0;
                 objeto->c[0].y = 400;
                 objeto->saltando = false;
