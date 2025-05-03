@@ -91,3 +91,5 @@ void mudareta(player* objeto){
         }
 }
 int movi(player* objeto, int direcao) {
+      if (!objeto->saltando && !objeto->w && !objeto->s) {  // se não tiver pulando nem chutando
+  
