@@ -47,4 +47,6 @@ void desen(player* objeto);
 
 void mudareta(player *objeto);
 
+player2* cria_player2();
+
 #endif
