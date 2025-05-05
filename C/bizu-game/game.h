@@ -49,4 +49,6 @@ void mudareta(player *objeto);
 
 player2* cria_player2();
 
+int movi2 (player2 *objeto2, int direcao2);
+
 #endif
