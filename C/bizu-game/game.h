@@ -53,4 +53,6 @@ int movi2 (player2 *objeto2, int direcao2);
 
 void desen2(player2* objeto2);
 
+void mudareta2(player* objeto, player2 *objeto2);
+
 #endif
