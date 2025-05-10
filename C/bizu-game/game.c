@@ -18,8 +18,8 @@ player* cria_player() {
     objeto->direcao = BAIXO;
 
     objeto->saltando = false;
-    objeto->velocidade_salto = 100;
-    objeto->gravidade = 100;
+    objeto->velocidade_salto = 60;
+    objeto->gravidade = 80;
     objeto->altura_maxima = 30;
     objeto->altura_atual = 0;
     objeto->direcao_anterior = DIREITA;
