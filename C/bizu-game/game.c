@@ -137,5 +137,22 @@ int movi(player* objeto, int direcao) {
                 objeto->subindo = false; 
                
             }
+        } else {
+
+        
+            objeto->c[0].y += 110;
+           
+            objeto->altura_atual -= objeto->gravidade - 55;
+
+            if (objeto->altura_atual <= 0) {
+                
+                objeto->altura_atual = 0;
+                objeto->c[0].y = 400;
+                objeto->d = false;
+                objeto->subindo = false;
+                objeto->direcao = objeto->direcao_anterior;
+            }
+        }
+    }
 
 
