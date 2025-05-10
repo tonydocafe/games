@@ -154,5 +154,15 @@ int movi(player* objeto, int direcao) {
             }
         }
     }
+    if (objeto->w) {
+        if (objeto->subindo) {
+        
+            objeto->c[0].y -= objeto->velocidade_salto + 50;
+            objeto->altura_atual += objeto->velocidade_salto - 5;
+            objeto->direcao = DIREITA;
 
+            if (objeto->altura_atual >= objeto->altura_maxima) {
+                objeto->subindo = false; 
+                
+            }
 
