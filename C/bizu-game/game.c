@@ -183,3 +183,7 @@ int movi(player* objeto, int direcao) {
         objeto->chute_contador++;
         objeto->c[0].x += 1;  
         objeto->direcao = BAIXO;
+            
+        if (objeto->chute_contador >= objeto->chute_duracao) {
+            objeto->s = false;
+            objeto->chute_contador = 0;
