@@ -204,3 +204,7 @@ int movi(player* objeto, int direcao) {
             objeto->direcao = objeto->direcao_anterior;
         }
     }
+    objeto->parado = !(objeto->andando_para_direita || objeto->andando_para_esquerda);
+
+    return 0;
+}
