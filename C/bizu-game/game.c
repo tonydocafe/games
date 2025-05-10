@@ -126,7 +126,7 @@ int movi(player* objeto, int direcao) {
             }
         }
     }
-if (objeto->d) {
+  if (objeto->d) {
         if (objeto->subindo) {
            
             objeto->c[0].y -= objeto->velocidade_salto + 5;
