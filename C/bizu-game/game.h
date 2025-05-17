@@ -65,8 +65,14 @@ typedef struct {
     bool andando_para_direita;
     bool andando_para_esquerda;
     bool parado;
-    int tomo; 
+    bool recuando;
+    int recuo_restante;
+    bool tomo;
+    int cooldown_ataque;
+    int life;
 
+
+} player2;
 
 
 player* cria_player();
