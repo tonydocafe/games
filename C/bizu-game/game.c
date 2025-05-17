@@ -218,3 +218,8 @@ if (!objeto->saltando && (objeto->andando_para_direita || objeto->andando_para_e
         objeto->frame_contador = 0;
     }
 }
+ for (int i = 1; i < objeto->tamanho; i++) {
+        desenha_retangulo(objeto->c[i].x, objeto->c[i].y, 10, 10);
+    }
+
+if(objeto->direcao == DIREITA){
