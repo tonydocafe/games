@@ -50,7 +50,9 @@ typedef struct {
     int velocidade_salto;
     int gravidade;
     int altura_maxima;
-
+    int altura_atual;
+    int direcao_anterior;
+    int saltando;
 
 
 
