@@ -40,6 +40,18 @@ typedef struct {
 } player;
 
 typedef struct {
+    Coord* c;
+    int tamanho;
+    int direcao;
+
+
+
+
+
+
+
+
+
 
 player* cria_player();
 
