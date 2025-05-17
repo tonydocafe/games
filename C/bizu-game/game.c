@@ -208,3 +208,13 @@ int movi(player* objeto, int direcao) {
 
     return 0;
 }
+void desen(player* objeto) {
+    cor(BRANCO);
+
+if (!objeto->saltando && (objeto->andando_para_direita || objeto->andando_para_esquerda)){
+    objeto->frame_contador++;
+    if (objeto->frame_contador >= objeto->frame_velocidade) {
+        objeto->alterna_imagem = !objeto->alterna_imagem;
+        objeto->frame_contador = 0;
+    }
+}
