@@ -56,7 +56,11 @@ typedef struct {
     int altura_atual;
     int direcao_anterior;
     int saltando;
-
+    bool subindo;
+    int w;
+    int s;
+    int a;
+    int d;
 
 
 
