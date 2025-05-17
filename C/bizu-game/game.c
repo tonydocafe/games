@@ -223,3 +223,10 @@ if (!objeto->saltando && (objeto->andando_para_direita || objeto->andando_para_e
     }
 
 if(objeto->direcao == DIREITA){
+  if (objeto->w) {
+     
+            if(objeto->altura_atual == 0)desenha_imagem(objeto->c[0].x, objeto->c[0].y, "assets/wheel_bizu.png");
+
+            if(objeto->altura_atual == 55)desenha_imagem(objeto->c[0].x, objeto->c[0].y, "assets/wheel_bizu_flip.png");
+            if(objeto->altura_atual == 5)desenha_imagem(objeto->c[0].x, objeto->c[0].y, "assets/wheel_bizu_90.png");
+    }
