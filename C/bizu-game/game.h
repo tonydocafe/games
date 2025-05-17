@@ -44,7 +44,9 @@ typedef struct {
     int tamanho;
     int direcao;
 
-
+    int frame_velocidade;   
+    int frame_contador;    
+    int alterna_imagem;
 
 
 
