@@ -76,11 +76,13 @@ typedef struct {
 
 
 player* cria_player();
+
 player2* cria_player3();
 
 int movi (player *objeto, int direcao);
 
 void desen(player* objeto);
+
 void desen4(player2* objeto2);
 
 void mudareta(player *objeto);
@@ -94,8 +96,11 @@ void desen2(player2* objeto2);
 void mudareta2(player* objeto, player2 *objeto2);
 
 void atacar(player* objeto,player2* objeto2 );
+
 void mudareta3(player* objeto, player2 *objeto2);
+
 int movi3(player2* objeto2, int direcao);
+
 void limita_bordas(Coord* c);
 
 #endif
