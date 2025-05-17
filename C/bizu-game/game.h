@@ -63,7 +63,9 @@ typedef struct {
     int chute_contador;
     int chute_duracao;
     bool andando_para_direita;
-
+    bool andando_para_esquerda;
+    bool parado;
+    int tomo; 
 
 
 
