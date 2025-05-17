@@ -12,9 +12,9 @@ typedef struct {
     int direcao;
 
     // Animação
-    int frame_velocidade;     // controle da velocidade de animação
-    int frame_contador;       // contador para alternância de frames
-    int alterna_imagem;       // flag de alternância de imagem
+    int frame_velocidade;     
+    int frame_contador;       
+    int alterna_imagem;       
 
     // Salto
     int velocidade_salto;
