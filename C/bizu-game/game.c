@@ -245,3 +245,10 @@ else if (objeto->d) {
       if (objeto->parado) {
     desenha_imagem(objeto->c[0].x, objeto->c[0].y, "assets/bizuzu.png");
         } else {
+     if (objeto->alterna_imagem) {
+                desenha_imagem(objeto->c[0].x, objeto->c[0].y, "assets/bizubi.png");
+            } else {
+      desenha_imagem(objeto->c[0].x, objeto->c[0].y, "assets/bizuzu.png");
+            }
+        }
+    }
