@@ -39,6 +39,8 @@ typedef struct {
 
 } player;
 
+typedef struct {
+
 player* cria_player();
 
 int movi (player *objeto, int direcao);
