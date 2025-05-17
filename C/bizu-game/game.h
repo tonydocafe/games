@@ -56,7 +56,7 @@ void desen2(player2* objeto2);
 void mudareta2(player* objeto, player2 *objeto2);
 
 void atacar(player* objeto,player2* objeto2 );
-
+void mudareta3(player* objeto, player2 *objeto2);
 void limita_bordas(Coord* c);
 
 #endif
