@@ -242,3 +242,4 @@ else if (objeto->d) {
     } else if (objeto->direcao == BAIXO) {
         desenha_imagem(objeto->c[0].x, objeto->c[0].y, "assets/bizuzu.png");
     } else {
+      if (objeto->parado) {
