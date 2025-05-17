@@ -11,11 +11,12 @@ typedef struct {
     int tamanho;
     int direcao;
 
-    int frame_velocidade;     
-    int frame_contador;       
-    int alterna_imagem;      
+    // Animação
+    int frame_velocidade;     // controle da velocidade de animação
+    int frame_contador;       // contador para alternância de frames
+    int alterna_imagem;       // flag de alternância de imagem
 
-
+    // Salto
     int velocidade_salto;
     int gravidade;
     int altura_maxima;
@@ -23,23 +24,23 @@ typedef struct {
     int direcao_anterior;
     int saltando;
     bool subindo;
-
     int w;
     int s;
     int a;
     int d;
-
     int chute_contador;
     int chute_duracao;
-
     bool andando_para_direita;
     bool andando_para_esquerda;
     bool parado;
+    int tomo; 
     bool recuando;
     int recuo_restante;
-    bool tomo;
 
 } player;
+
+
+
 
 typedef struct {
     Coord* c;
