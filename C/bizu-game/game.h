@@ -57,6 +57,7 @@ void mudareta2(player* objeto, player2 *objeto2);
 
 void atacar(player* objeto,player2* objeto2 );
 void mudareta3(player* objeto, player2 *objeto2);
+int movi3(player2* objeto2, int direcao);
 void limita_bordas(Coord* c);
 
 #endif
