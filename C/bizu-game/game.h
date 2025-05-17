@@ -44,6 +44,7 @@ player* cria_player();
 int movi (player *objeto, int direcao);
 
 void desen(player* objeto);
+void desen4(player2* objeto2);
 
 void mudareta(player *objeto);
 
