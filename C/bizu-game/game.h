@@ -35,7 +35,9 @@ typedef struct {
     bool andando_para_direita;
     bool andando_para_esquerda;
     bool parado;
-
+    bool recuando;
+    int recuo_restante;
+    bool tomo;
 
 } player;
 
