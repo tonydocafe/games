@@ -47,7 +47,9 @@ typedef struct {
     int frame_velocidade;   
     int frame_contador;    
     int alterna_imagem;
-
+    int velocidade_salto;
+    int gravidade;
+    int altura_maxima;
 
 
 
