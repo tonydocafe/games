@@ -230,3 +230,4 @@ if(objeto->direcao == DIREITA){
             if(objeto->altura_atual == 55)desenha_imagem(objeto->c[0].x, objeto->c[0].y, "assets/wheel_bizu_flip.png");
             if(objeto->altura_atual == 5)desenha_imagem(objeto->c[0].x, objeto->c[0].y, "assets/wheel_bizu_90.png");
     }
+else if (objeto->d) {
