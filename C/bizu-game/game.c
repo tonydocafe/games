@@ -231,3 +231,14 @@ if(objeto->direcao == DIREITA){
             if(objeto->altura_atual == 5)desenha_imagem(objeto->c[0].x, objeto->c[0].y, "assets/wheel_bizu_90.png");
     }
 else if (objeto->d) {
+     if(objeto->altura_atual == 55)desenha_imagem(objeto->c[0].x, objeto->c[0].y, "assets/boaboaz.png");
+}else if (objeto->s) {
+        desenha_imagem(objeto->c[0].x, objeto->c[0].y, "assets/kick_bizu.png");
+    }else if (objeto->a) {
+        desenha_imagem(objeto->c[0].x, objeto->c[0].y, "assets/pe_bizu.png");
+    } else if (objeto->saltando) {
+        
+        desenha_imagem(objeto->c[0].x, objeto->c[0].y, "assets/bibizu.png");
+    } else if (objeto->direcao == BAIXO) {
+        desenha_imagem(objeto->c[0].x, objeto->c[0].y, "assets/bizuzu.png");
+    } else {
