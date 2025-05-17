@@ -76,6 +76,7 @@ typedef struct {
 
 
 player* cria_player();
+player2* cria_player3();
 
 int movi (player *objeto, int direcao);
 
