@@ -107,6 +107,4 @@ int movi3(player2* objeto2, int direcao);
 
 void limita_bordas(Coord* c);
 
-void mudareta3(player* objeto, player2 *objeto2);
-
 #endif
