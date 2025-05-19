@@ -6,6 +6,7 @@ typedef struct{
     int y;
 }Coord;
 
+
 typedef struct {
     Coord* c;
     int tamanho;
