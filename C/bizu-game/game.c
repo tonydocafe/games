@@ -252,3 +252,11 @@ else if (objeto->d) {
             }
         }
     }
+
+
+void limita_bordas(Coord* c) {
+    if (c->x < 0) c->x = 0;
+    if (c->x > 640 - 128) c->x = 640 - 128;
+    if (c->y < 0) c->y = 0;
+    if (c->y > 480 - 80) c->y = 480 - 80;
+}
