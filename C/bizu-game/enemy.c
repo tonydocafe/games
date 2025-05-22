@@ -69,3 +69,46 @@ player2* cria_player3() {
 
     return objeto2;
 }
+
+
+void atacar(player* objeto,player2* objeto2 ){
+  
+    int dx = abs(objeto->c[0].x - objeto2->c[0].x);
+    int dy = abs(objeto->c[0].y - objeto2->c[0].y);
+    
+    if (objeto2->cooldown_ataque > 0) {
+        objeto2->cooldown_ataque--;
+        return;
+    }
+  
+    if (dx < 150 && dy < 50) { 
+        int tipo_ataque =   rand() % 4; 
+
+        switch (tipo_ataque) {
+            case 0:
+                objeto2->s = true;
+              //  printf("\nataque s\n");
+                break;
+            case 1:
+                objeto2->w = true; 
+                objeto2->subindo = true;
+                objeto2->altura_atual = 0;
+             //   printf("\nataque w\n");
+                break;
+            case 2:
+                objeto2->a = true; 
+             //   printf("\nataque a\n");
+                break;
+            case 3:
+                objeto2->d = true; 
+         
+                break;
+        }
+ 
+        objeto2->chute_contador = 0;
+        objeto2->direcao_anterior = objeto2->direcao;
+        objeto2->cooldown_ataque = 50;
+    }
+
+    
+}
