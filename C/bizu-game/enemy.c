@@ -112,3 +112,54 @@ void atacar(player* objeto,player2* objeto2 ){
 
     
 }
+void mudareta2(player* objeto,player2* objeto2) {
+    
+
+
+
+
+
+
+        if (objeto2->saltando || objeto2->s || objeto2->w || objeto2->d || objeto2->a) return;
+        
+        
+        
+        
+            // Se está recuando, continua recuo
+            if (objeto2->recuando && !objeto2->tomo) {
+                printf("recuando normal. recuo restante: %d\n", objeto2->recuo_restante);
+                if (objeto2->direcao == DIREITA) {
+                    objeto2->andando_para_esquerda = true;
+                    objeto2->andando_para_direita = false;
+                } else {
+                    objeto2->andando_para_esquerda = false;
+                    objeto2->andando_para_direita = true;
+                }
+                objeto2->recuo_restante -= 2;
+            
+                if (objeto2->recuo_restante <= 0) {
+                    objeto2->recuando = false;
+                
+                }
+            return;
+
+            } else if (objeto2->tomo) {
+            
+                printf("tomo! recuo restante: %d\n", objeto2->recuo_restante);
+                if (objeto2->direcao == DIREITA) {
+                    objeto2->andando_para_esquerda = true;
+                    objeto2->andando_para_direita = false;// Recuar para a esquerda
+                } else {
+                    objeto2->andando_para_esquerda = false;
+                    objeto2->andando_para_direita = true;// Recuar para a direita
+                }
+                objeto2->recuo_restante -= 8;
+            
+                if (objeto2->recuo_restante <= 0) {
+                    printf("recuo finalizado\n");
+                    objeto2->recuando = false;
+                    objeto2->tomo = false;
+                    objeto2->life --;
+                }
+            
+            }
