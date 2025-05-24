@@ -178,3 +178,24 @@ void mudareta2(player* objeto,player2* objeto2) {
 
 
             bool colisao = x1_dir < x2_esq + largura2 && x1_dir + largura1 > x2_esq && y1_dir < y2_esq + altura2 && y1_dir + altura1 > y2_esq; 
+            bool colisao2 = x1_esq < x2_dir + largura2 && x1_esq + largura1 > x2_dir &&  y1_esq < y2_dir + altura2 && y1_esq + altura1 > y2_dir;
+            // verificação ----------**********----------------**********--------------------------
+                cor(VERMELHO);        
+                preenchimento(true);
+                desenha_retangulo(x2_esq ,y2_esq , 38, 18);
+                printf("esquerda da onça : %i", x2_esq);
+                cor(VERMELHO);        
+                preenchimento(true);
+                desenha_retangulo(x2_dir ,y2_dir, 38, 18);
+                printf("direita da onça : %i\n", x2_dir);           
+                cor(PRETO);        
+                preenchimento(false);
+                desenha_retangulo(objeto->c[0].x - 35 ,objeto->c[0].y, 20, 10);
+                printf("esquerda do bezoo : %i",objeto->c[0].x - 35 );
+                cor(VERDE);        
+                preenchimento(true);
+                desenha_retangulo(x1_dir ,y1_dir, 20, 10);
+                printf("direita do bezoo : %i\n",x1_dir );
+                if (objeto2->c[0].x - objeto->c[0].x < 5) printf("\nvalor da colisão : %i\n",  abs(objeto2->c[0].x - objeto->c[0].x));
+                //-------------------***********-------------------********************----------------------------------
+
