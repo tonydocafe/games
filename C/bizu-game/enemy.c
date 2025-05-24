@@ -177,4 +177,4 @@ void mudareta2(player* objeto,player2* objeto2) {
             int altura1 = 10;
 
 
-            bool colisao = x1_dir < x2_esq + largura2 && x1_dir + largura1 > x2_esq &&
+            bool colisao = x1_dir < x2_esq + largura2 && x1_dir + largura1 > x2_esq && y1_dir < y2_esq + altura2 && 
