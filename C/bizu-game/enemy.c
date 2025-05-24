@@ -199,3 +199,9 @@ void mudareta2(player* objeto,player2* objeto2) {
                 if (objeto2->c[0].x - objeto->c[0].x < 5) printf("\nvalor da colisão : %i\n",  abs(objeto2->c[0].x - objeto->c[0].x));
                 //-------------------***********-------------------********************----------------------------------
             if ((colisao || colisao2) && !objeto2->recuando && !objeto2->tomo) {
+                if(objeto->s || objeto->w || objeto->a || objeto->d) {
+                    objeto2->tomo = true;
+                                        }else{ 
+                        objeto2->tomo = false;
+                        
+                    }    
