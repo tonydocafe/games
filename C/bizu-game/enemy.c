@@ -208,4 +208,5 @@ void mudareta2(player* objeto,player2* objeto2) {
                 objeto2->recuando = true;
                 objeto2->direcao_anterior = objeto2->direcao;
             return;
+            )
   
