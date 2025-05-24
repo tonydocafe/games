@@ -204,4 +204,5 @@ void mudareta2(player* objeto,player2* objeto2) {
                 }else{ 
                     objeto2->tomo = false;
                 }   
-    
+                objeto2->recuo_restante = 200;
+
