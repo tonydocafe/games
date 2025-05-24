@@ -166,3 +166,4 @@ void mudareta2(player* objeto,player2* objeto2) {
             int x2_dir = objeto2->c[0].x + 55;
             int y2_dir = objeto2->c[0].y + 5;
             int x1_esq = objeto->c[0].x - 35;
+            int y1_esq = objeto->c[0].y;
