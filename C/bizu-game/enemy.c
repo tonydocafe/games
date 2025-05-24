@@ -163,4 +163,4 @@ void mudareta2(player* objeto,player2* objeto2) {
                 }
             
             }
- int x2_dir = objeto2->c[0].x + 55;
+            int x2_dir = objeto2->c[0].x + 55;
