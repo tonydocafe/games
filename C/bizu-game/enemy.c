@@ -201,7 +201,7 @@ void mudareta2(player* objeto,player2* objeto2) {
             if ((colisao || colisao2) && !objeto2->recuando && !objeto2->tomo) {
                 if(objeto->s || objeto->w || objeto->a || objeto->d) {
                     objeto2->tomo = true;
-                                }else{ 
-                        objeto2->tomo = false;
-                        
-                    }    
+                }else{ 
+                    objeto2->tomo = false;
+                }   
+    
