@@ -171,5 +171,5 @@ void mudareta2(player* objeto,player2* objeto2) {
             int y2_esq = objeto2->c[0].y + 5;
             int largura2 = 38;
             int altura2 = 18;
-
+            int x1_dir = objeto->c[0].x + 15;
 
