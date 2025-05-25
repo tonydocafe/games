@@ -209,4 +209,24 @@ void mudareta2(player* objeto,player2* objeto2) {
                 objeto2->direcao_anterior = objeto2->direcao;
             return;
             )
-  
+            if(objeto2->recuando == false ){
+                printf("\ntoma\n");
+                if (objeto2->c[0].x < objeto->c[0].x) {
+                    objeto2->andando_para_direita = false;
+                    objeto2->andando_para_esquerda = true;
+                    objeto2->direcao = ESQUERDA;
+                    
+                    printf("\nANDO PRA DIREITA\n");
+                    } else if (objeto2->c[0].x > objeto->c[0].x) {
+                        objeto2->andando_para_direita = true;
+                        objeto2->andando_para_esquerda = false;
+                        objeto2->direcao = DIREITA;
+                        printf("\nANDO PRA ESQUERDA\n");
+                    } 
+    
+                    if (abs(objeto2->c[0].x - objeto->c[0].x) < 30) 
+                    {
+                        if (objeto->direcao == ESQUERDA)objeto2->c[0].x = objeto->c[0].x + 150;
+                        if (objeto->direcao == DIREITA)objeto2->c[0].x = objeto->c[0].x - 150;
+                    }
+            }
