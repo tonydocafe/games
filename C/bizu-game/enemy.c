@@ -213,3 +213,5 @@ void mudareta2(player* objeto,player2* objeto2) {
                         if (objeto->direcao == DIREITA)objeto2->c[0].x = objeto->c[0].x - 150;
                     }
             }
+        }
+}
