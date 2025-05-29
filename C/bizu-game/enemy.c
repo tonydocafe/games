@@ -113,19 +113,8 @@ void atacar(player* objeto,player2* objeto2 ){
     
 }
 void mudareta2(player* objeto,player2* objeto2) {
-    
-
-
-
-
-
-
         if (objeto2->saltando || objeto2->s || objeto2->w || objeto2->d || objeto2->a) return;
-        
-        
-        
-        
-            // Se está recuando, continua recuo
+          
             if (objeto2->recuando && !objeto2->tomo) {
                 printf("recuando normal. recuo restante: %d\n", objeto2->recuo_restante);
                 if (objeto2->direcao == DIREITA) {
@@ -141,8 +130,7 @@ void mudareta2(player* objeto,player2* objeto2) {
                     objeto2->recuando = false;
                 
                 }
-            return;
-
+             return;
             } else if (objeto2->tomo) {
             
                 printf("tomo! recuo restante: %d\n", objeto2->recuo_restante);
@@ -160,8 +148,7 @@ void mudareta2(player* objeto,player2* objeto2) {
                     objeto2->recuando = false;
                     objeto2->tomo = false;
                     objeto2->life --;
-                }
-            
+                }     
             }
 
             int x2_dir = objeto2->c[0].x + 55;
@@ -215,3 +202,6 @@ void mudareta2(player* objeto,player2* objeto2) {
             }
         }
 }
+
+
+
