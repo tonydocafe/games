@@ -203,5 +203,5 @@ void mudareta2(player* objeto,player2* objeto2) {
         }
 }
 
-
+int movi2(player2* objeto2, int direcao) {
 
