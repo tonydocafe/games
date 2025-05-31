@@ -205,4 +205,5 @@ void mudareta2(player* objeto,player2* objeto2) {
 
 int movi2(player2* objeto2, int direcao) {
     if (!objeto2->saltando || !objeto2->w || !objeto2->s || objeto2->d || objeto2->a ) { 
+        if (objeto2->andando_para_direita) {
 
