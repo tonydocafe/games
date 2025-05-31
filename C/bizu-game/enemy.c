@@ -220,4 +220,4 @@ int movi2(player2* objeto2, int direcao) {
                 if (objeto2->altura_atual >= objeto2->altura_maxima) {
                     objeto2->subindo = false;  // Começa a descer
                 }
-
+            } else {
