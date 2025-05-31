@@ -208,4 +208,5 @@ int movi2(player2* objeto2, int direcao) {
         if (objeto2->andando_para_direita) {
             objeto2->c[0].x -= 2; 
         }
+        if (objeto2->andando_para_esquerda) {
 
