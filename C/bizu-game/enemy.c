@@ -87,7 +87,7 @@ void atacar(player* objeto,player2* objeto2 ){
         switch (tipo_ataque) {
             case 0:
                 objeto2->s = true;
-              //  printf("\nataque s\n");
+              
                 break;
             case 1:
                 objeto2->w = true; 
