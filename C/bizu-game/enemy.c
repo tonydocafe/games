@@ -241,3 +241,4 @@ int movi2(player2* objeto2, int direcao) {
                 objeto2->d= false;
                 objeto2->chute_contador = 0;
                 objeto2->direcao = objeto2->direcao_anterior;
+                objeto2->c[0].y = 380;
