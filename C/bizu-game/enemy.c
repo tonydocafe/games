@@ -23,7 +23,7 @@ player2* cria_player2() {
     objeto2->s = false;
     objeto2->d = false;
     objeto2->chute_contador = 0;
-    objeto2->chute_duracao = 10; // duração do chute em frames
+    objeto2->chute_duracao = 10; 
     objeto2->andando_para_direita = false;
     objeto2->andando_para_esquerda = false;
     objeto2->parado = true;
