@@ -226,3 +226,4 @@ int movi2(player2* objeto2, int direcao) {
                 objeto2->c[0].x -=1;    
                 if (objeto2->altura_atual <= 0) {
                     objeto2->altura_atual = 0;
+                    objeto2->c[0].y = 380;
