@@ -230,3 +230,4 @@ int movi2(player2* objeto2, int direcao) {
                     objeto2->saltando = false;
                     objeto2->subindo = false;
                     objeto2->direcao = objeto2->direcao_anterior;
+                }
