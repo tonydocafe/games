@@ -221,3 +221,4 @@ int movi2(player2* objeto2, int direcao) {
                     objeto2->subindo = false;  // Começa a descer
                 }
             } else {
+                objeto2->c[0].y += objeto2->gravidade;
