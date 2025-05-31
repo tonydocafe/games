@@ -213,4 +213,6 @@ int movi2(player2* objeto2, int direcao) {
         }
  }
     if (objeto2->direcao == DIREITA){
-  
+         if (objeto2->saltando) {
+            if (objeto2->subindo) {
+
