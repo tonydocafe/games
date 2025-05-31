@@ -228,3 +228,4 @@ int movi2(player2* objeto2, int direcao) {
                     objeto2->altura_atual = 0;
                     objeto2->c[0].y = 380;
                     objeto2->saltando = false;
+                    objeto2->subindo = false;
