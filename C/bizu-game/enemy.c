@@ -30,7 +30,6 @@ player2* cria_player2() {
     objeto2->recuando = false;
     objeto2->life = 3;
 
-
     return objeto2;
 }
 
@@ -65,7 +64,6 @@ player2* cria_player3() {
     objeto2->parado = true;
     objeto2->recuando = false;
     objeto2->life = 9;
-
 
     return objeto2;
 }
@@ -163,7 +161,6 @@ void mudareta2(player* objeto,player2* objeto2) {
             int y1_dir = objeto->c[0].y;
             int largura1 = 20;
             int altura1 = 10;
-
 
             bool colisao = x1_dir < x2_esq + largura2 && x1_dir + largura1 > x2_esq && y1_dir < y2_esq + altura2 && y1_dir + altura1 > y2_esq; 
             bool colisao2 = x1_esq < x2_dir + largura2 && x1_esq + largura1 > x2_dir &&  y1_esq < y2_dir + altura2 && y1_esq + altura1 > y2_dir;
