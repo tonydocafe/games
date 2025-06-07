@@ -282,3 +282,4 @@ int movi2(player2* objeto2, int direcao) {
                 objeto2->direcao = objeto2->direcao_anterior;
             }
         }
+        objeto2->parado = !(objeto2->andando_para_direita || objeto2->andando_para_esquerda);
