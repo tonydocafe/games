@@ -244,3 +244,4 @@ int movi2(player2* objeto2, int direcao) {
         if (objeto2->w) {
             if (objeto2->subindo) {
                 objeto2->c[0].y -= objeto2->velocidade_salto - 20;
+                objeto2->altura_atual += objeto2->velocidade_salto -20;
