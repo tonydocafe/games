@@ -273,3 +273,4 @@ int movi2(player2* objeto2, int direcao) {
                 objeto2->c[0].y = 380;
             }
         }
+        if (objeto2->a) {
