@@ -285,3 +285,4 @@ int movi2(player2* objeto2, int direcao) {
         objeto2->parado = !(objeto2->andando_para_direita || objeto2->andando_para_esquerda);
     } else {
         if (objeto2->saltando) {
+            if (objeto2->subindo) {
