@@ -294,3 +294,4 @@ int movi2(player2* objeto2, int direcao) {
             } else {
                 objeto2->c[0].y += objeto2->gravidade;
                 objeto2->altura_atual -= objeto2->gravidade;
+                objeto2->c[0].x +=1;    
