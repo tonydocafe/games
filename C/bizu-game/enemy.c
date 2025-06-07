@@ -290,3 +290,4 @@ int movi2(player2* objeto2, int direcao) {
                 objeto2->altura_atual += objeto2->velocidade_salto ;
                 if (objeto2->altura_atual >= objeto2->altura_maxima) {
                     objeto2->subindo = false;
+                }
