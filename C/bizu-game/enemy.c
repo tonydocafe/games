@@ -263,3 +263,6 @@ int movi2(player2* objeto2, int direcao) {
             }
         }
         if (objeto2->s) {
+            objeto2->c[0].y = 400;
+            objeto2->chute_contador++;
+            objeto2->c[0].x -= 3;  
