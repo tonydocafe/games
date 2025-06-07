@@ -274,3 +274,4 @@ int movi2(player2* objeto2, int direcao) {
             }
         }
         if (objeto2->a) {
+            objeto2->chute_contador++;
