@@ -304,3 +304,22 @@ int movi2(player2* objeto2, int direcao) {
                 }
             }
         }
+       if (objeto2->d) {
+            objeto2->c[0].y = 410;
+            objeto2->chute_contador++;
+            objeto2->c[0].x += 5;
+         
+        
+            if (objeto2->chute_contador >= (objeto2->chute_duracao + 10)) {
+                objeto2->d= false;
+                objeto2->chute_contador = 0;
+                objeto2->direcao = objeto2->direcao_anterior;
+                objeto2->c[0].y = 380;
+            }
+        }
+        if (objeto2->w) {
+            if (objeto2->subindo) {
+             
+                objeto2->c[0].y -= objeto2->velocidade_salto - 20;
+                objeto2->altura_atual += objeto2->velocidade_salto -20;
+                objeto2->c[0].x += 1;
