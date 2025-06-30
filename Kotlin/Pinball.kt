@@ -16,8 +16,8 @@ fun main() {
 class PinballGame : JPanel() {
     private var ballX = 0
     private var ballY = 0
-    private var ballSpeedX = 2
-    private var ballSpeedY = 3
+    private var ballSpeedX = 0
+    private var ballSpeedY = 0
 
     private var paddleX = 0
     private val paddleWidth = 100
@@ -25,7 +25,7 @@ class PinballGame : JPanel() {
 
     private val ballSize = 20
     private var gameOver = false
-    private var initialized = false // Controle de inicialização
+    private var initialized = false
 
     init {
         preferredSize = Dimension(400, 400)
@@ -37,19 +37,24 @@ class PinballGame : JPanel() {
                 when (e.keyCode) {
                     KeyEvent.VK_LEFT -> paddleX = maxOf(0, paddleX - 20)
                     KeyEvent.VK_RIGHT -> paddleX = minOf(width - paddleWidth, paddleX + 20)
+                    KeyEvent.VK_SPACE -> {
+                        if (gameOver) {
+                            resetGame()
+                        }
+                    }
                 }
                 repaint()
             }
         })
 
         Timer(10) {
-            if (!initialized) return@Timer // Aguarda inicialização
+            if (!initialized) return@Timer
             
             if (!gameOver) {
                 ballX += ballSpeedX
                 ballY += ballSpeedY
 
-                // Rebate nas paredes laterais
+                // Rebate nas paredes
                 if (ballX <= 0 || ballX + ballSize >= width) {
                     ballSpeedX = -ballSpeedX
                 }
@@ -80,32 +85,37 @@ class PinballGame : JPanel() {
         }.start()
     }
 
-    // Garante que o jogo só inicia após o componente ser renderizado
+    private fun resetGame() {
+        gameOver = false
+        ballX = width / 2 - ballSize / 2
+        ballY = height / 4
+        ballSpeedX = if (Math.random() > 0.5) 3 else -3
+        ballSpeedY = 3
+        paddleX = width / 2 - paddleWidth / 2
+    }
+
     override fun paintComponent(g: Graphics) {
         super.paintComponent(g)
         
         if (!initialized) {
-            ballX = width / 2 - ballSize / 2
-            ballY = height / 4
-            paddleX = width / 2 - paddleWidth / 2
+            resetGame() // Usa a mesma função de reinício para inicializar
             initialized = true
         }
 
-        // Bola
         g.color = Color.RED
         g.fillOval(ballX, ballY, ballSize, ballSize)
 
-        // Barra
         g.color = Color.BLUE
         g.fillRect(paddleX, height - 30, paddleWidth, paddleHeight)
 
-        // Game Over
         if (gameOver) {
             g.color = Color.BLACK
             g.font = Font("Arial", Font.BOLD, 30)
-            val msg = "Game Over"
+            val msg = "Game Over - Pressione ESPAÇO"
             val msgWidth = g.fontMetrics.stringWidth(msg)
             g.drawString(msg, width / 2 - msgWidth / 2, height / 2)
+            
+
         }
     }
 }
